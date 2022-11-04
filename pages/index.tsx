@@ -2,6 +2,7 @@ import BottomBar from "../components/BottomBar";
 import {useEffect, useState} from "react";
 import classNames from "classnames";
 import Link from "next/link";
+import Head from "next/head";
 
 export const projects = [
     {
@@ -65,6 +66,9 @@ export default function Home() {
 
     return (
         <div className="mx-auto max-w-2xl px-4">
+            <Head>
+                <title>Samson's interactive portfolio</title>
+            </Head>
             <div className="text-center my-16 text-xl max-w-lg mx-auto">
                 <h1 className="font-meta font-medium text-4xl">Good {TOD}, Seattle Times.</h1>
                 <p className="my-4">Click through the four scenarios below to learn how I’ve <b>served communities as a journalist and interactives developer,</b> and why I want to keep doing it at The Seattle Times this summer.</p>

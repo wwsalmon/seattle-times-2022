@@ -3,12 +3,16 @@ import BottomBar from "./BottomBar";
 import Link from "next/link";
 import {FiArrowLeft, FiArrowRight} from "react-icons/fi";
 import {projects} from "../pages";
+import Head from "next/head";
 
 export default function PageContainer({children, id}: { children: ReactNode, id: string }) {
     const thisProject = projects.find(d => d.id === id);
 
     return (
         <div className="mx-auto px-4 max-w-6xl my-16 pb-32">
+            <Head>
+                <title>{thisProject.hed} | Samson's interactive portfolio</title>
+            </Head>
             <p className="uppercase tracking-widest uppercase font-bold mb-4 text-center">Project {thisProject.index}</p>
             <h1 className="text-center text-6xl font-meta font-medium text-center mb-10">{thisProject.hed}</h1>
             <p className="max-w-2xl text-2xl text-center mx-auto text-zinc-500">{thisProject.dek}</p>
