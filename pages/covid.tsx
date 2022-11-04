@@ -1,10 +1,8 @@
-import {useEffect, useState} from "react";
-import BottomBar from "../components/BottomBar";
-import Link from "next/link";
-import {FiArrowLeft} from "react-icons/fi";
+import {useEffect} from "react";
 import PageContainer from "../components/PageContainer";
 import PageEmbed from "../components/PageEmbed";
 import PageImage from "../components/PageImage";
+import PageContent from "../components/PageContent";
 
 export default function Covid() {
     useEffect(() => {
@@ -15,7 +13,7 @@ export default function Covid() {
         <>
             <PageContainer index={1} title="5C COVID Tracker">
                 <PageEmbed url="https://tsl-covid.samsonzhang.com/"/>
-                <div className="max-w-2xl mx-auto content my-32">
+                <PageContent>
                     <p>The Claremont Colleges' 9,000 students and 3,600 faculty and staff are split between seven
                         undergraduate and graduate schools. Each school reported COVID testing data in a different way
                         and place.</p>
@@ -34,7 +32,7 @@ export default function Covid() {
                     <p>In Fall 2022 the Claremont Colleges stopped publicly reporting COVID data completely, leaving
                         this dashboard as the only publicly accessible archive of case counts over the last two
                         years.</p>
-                </div>
+                </PageContent>
                 <PageImage src="/covid/slide1.png"/>
                 <PageImage src="/covid/slide2.png"/>
             </PageContainer>
