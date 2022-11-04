@@ -9,7 +9,7 @@ export default function BottomBar({inline}: {inline?: boolean}) {
     useEffect(() => {
         let localReadList = JSON.parse(window.localStorage.getItem("readList") || "[]");
         const thisRoute = router.route.substring(1);
-        if (["covid", "pulitzers", "admissions", "ice"].includes(thisRoute) && !localReadList.includes(thisRoute)) {
+        if (["covid", "pulitzers", "admissions", "tuition"].includes(thisRoute) && !localReadList.includes(thisRoute)) {
             localReadList.push(thisRoute);
         }
         setReadList(localReadList);

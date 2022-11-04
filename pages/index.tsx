@@ -17,8 +17,8 @@ const items = [
         id: "admissions",
     },
     {
-        title: "Insights from 10 years of anti-ICE organizing",
-        id: "ice",
+        title: "Explaining tuition increases with 8 years of school financial reports",
+        id: "tuition",
     },
 ]
 
