@@ -5,7 +5,7 @@ import TweetEmbed from "react-tweet-embed";
 
 export default function Pulitzers() {
     return (
-        <PageContainer index={2} title="AAJA Voices">
+        <PageContainer id="pulitzers">
             <PageEmbed url="https://wwsalmon.github.io/aaja-voices-vis/demographics/hispanic" height={450}/>
             <PageEmbed url="https://wwsalmon.github.io/aaja-voices-vis/demographics/asian" height={480}/>
             <PageEmbed url="https://wwsalmon.github.io/aaja-voices-vis/demographics/black" height={450}/>

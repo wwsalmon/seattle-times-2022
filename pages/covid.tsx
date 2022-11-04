@@ -11,7 +11,7 @@ export default function Covid() {
 
     return (
         <>
-            <PageContainer index={1} title="5C COVID Tracker">
+            <PageContainer id="covid">
                 <PageEmbed url="https://tsl-covid.samsonzhang.com/"/>
                 <PageContent>
                     <p>The Claremont Colleges' 9,000 students and 3,600 faculty and staff are split between seven

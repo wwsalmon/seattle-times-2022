@@ -3,22 +3,34 @@ import {useEffect, useState} from "react";
 import classNames from "classnames";
 import Link from "next/link";
 
-const items = [
+export const projects = [
     {
+        index: 1,
         title: "COVID data that faculty relied on in the absence of admin reporting",
+        hed: "5C COVID Dashboard",
+        dek: "A dashboard for COVID testing data that faculty relied on, that exposed official over-counting and that was awarded Best COVID Coverage of 2021 by the CA College Media Assoc.",
         id: "covid",
     },
     {
+        index: 2,
+        title: "Explaining tuition increases with 8 years of school financial reports",
+        hed: "The Cost of Increasing Costs",
+        dek: "5C tuitions increase by up to 4.5% every year, consistently outpacing inflation. I looked through eight years of financial statements to find out where the money goes -- and how students feel the burden.",
+        id: "tuition",
+    },
+    {
+        index: 3,
         title: "A first-of-its-kind investigation into journalism’s top awards",
+        hed: "Journalism’s influential awards lack diverse judges",
+        dek: "A groundbreaking investigative through the AAJA Voices fellowship that resulted in a first-of-its kind dataset and calls for change by top news leaders.",
         id: "pulitzers",
     },
     {
-        title: "Explaining a COVID-driven decrease in student diversity",
+        index: 4,
+        title: "Explaining COVID's damage to admitted student diversity",
+        hed: "The COVID effect",
+        dek: "How did Pomona admit its most competitive and least diverse class in years? Because of a record number of deferrals, the data shows.",
         id: "admissions",
-    },
-    {
-        title: "Explaining tuition increases with 8 years of school financial reports",
-        id: "tuition",
     },
 ]
 
@@ -63,7 +75,7 @@ export default function Home() {
             </div>
             <BottomBar inline={true}/>
             <div className="grid grid-cols-2 gap-x-4 text-white my-24">
-                {items.map((d, i) => (
+                {projects.map((d, i) => (
                     <Card index={i + 1} title={d.title} read={readList.includes(d.id)} key={d.id} id={d.id}/>
                 ))}
             </div>

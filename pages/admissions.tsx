@@ -4,8 +4,8 @@ import PageContent from "../components/PageContent";
 
 export default function Admissions() {
     return (
-        <PageContainer index={3} title="Admissions">
-            <p className="text-center -mb-8">(Scroll in the embedded graphic below)</p>
+        <PageContainer id="admissions">
+            <p className="text-center -mb-8 mt-16">(Scroll in the embedded graphic below)</p>
             <PageEmbed url="https://idyll.pub/post/tsl-pomona-admissions-2025-37d26b9ee85d2445bd19a155/" height={600}/>
             <PageContent>
                 <p>When reporters from my student paper, <i>The Student Life</i>, got a tip from a faculty meeting that the class of 2025 was less diverse than previous classes, I started digging into why.</p>
