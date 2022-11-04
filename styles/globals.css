@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Dagny", sans-serif;
+}
+
+.card:nth-child(even) {
+    position: relative;
+    top: 32px;
+}
+
+.font-dagny {
+    font-family: "Dagny", sans-serif;
+}
+
+.font-meta {
+    font-family: "Meta Serif", serif;
+}
+
+@font-face {
+    font-family: "Dagny";
+    src: url("../fonts/dagny.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dagny";
+    src: url("../fonts/dagny-bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dagny";
+    src: url("../fonts/dagny-italic.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Dagny";
+    src: url("../fonts/dagny-bold-italic.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Meta Serif";
+    src: url("../fonts/MetaSerifPro-Book.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Meta Serif";
+    src: url("../fonts/MetaSerifPro-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Meta Serif";
+    src: url("../fonts/MetaSerifPro-Medium.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Meta Serif";
+    src: url("../fonts/MetaSerifPro-BookItalic.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Meta Serif";
+    src: url("../fonts/MetaSerifPro-MediumItalic.woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Meta Serif";
+    src: url("../fonts/MetaSerifPro-BoldItalic.woff");
+    font-weight: 700;
+    font-style: italic;
+}

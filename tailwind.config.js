@@ -3,7 +3,13 @@ module.exports = {
         './**/*.html',
         './**/*.tsx',
     ],
-    theme: {},
+    theme: {
+        extend: {
+            colors: {
+                linkBlue: "#0777B3",
+            }
+        }
+    },
     variants: {},
     plugins: [],
 }
