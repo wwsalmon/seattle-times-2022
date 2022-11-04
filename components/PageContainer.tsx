@@ -1,7 +1,7 @@
 import {ReactNode} from "react";
 import BottomBar from "./BottomBar";
 import Link from "next/link";
-import {FiArrowLeft} from "react-icons/fi";
+import {FiArrowLeft, FiArrowRight} from "react-icons/fi";
 import {projects} from "../pages";
 
 export default function PageContainer({children, id}: { children: ReactNode, id: string }) {
@@ -14,10 +14,24 @@ export default function PageContainer({children, id}: { children: ReactNode, id:
             <p className="max-w-2xl text-2xl text-center mx-auto text-zinc-500">{thisProject.dek}</p>
             {children}
             <Link href="/">
-                <a className="w-64 mx-auto block flex items-center justify-center bg-black hover:bg-zinc-800 text-white p-4 rounded-md">
+                <a className="px-8 mx-auto block flex items-center justify-center border border-black bg-zinc-100 hover:bg-zinc-200 my-4 p-4 rounded-md">
                     <FiArrowLeft/><span className="ml-2">Back home</span>
                 </a>
             </Link>
+            {thisProject.index < 4 && (
+                <Link href={`/${projects[thisProject.index].id}`}>
+                    <a className="px-8 mx-auto block flex items-center justify-center bg-black hover:bg-zinc-800 text-white p-4 rounded-md">
+                        <span className="mr-2">Next: {projects[thisProject.index].hed}</span><FiArrowRight/>
+                    </a>
+                </Link>
+            )}
+            {thisProject.index === 4 && (
+                <Link href="/">
+                    <a className="px-8 mx-auto block flex items-center justify-center bg-black hover:bg-zinc-800 text-white p-4 rounded-md">
+                        <span className="mr-2">Read my final message</span><FiArrowRight/>
+                    </a>
+                </Link>
+            )}
             <BottomBar/>
         </div>
     )
