@@ -11,6 +11,18 @@ body {
     top: 32px;
 }
 
+.content {
+    @apply text-xl leading-normal;
+}
+
+.content p {
+    @apply my-6;
+}
+
+.content a {
+    @apply text-linkBlue underline;
+}
+
 .font-dagny {
     font-family: "Dagny", sans-serif;
 }
